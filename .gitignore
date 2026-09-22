@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+dist/
+build/
+server/.node/
+server/.wrangler/
+app/build/
+web/TimeTracker.zip
+screenshots/
+*.log
