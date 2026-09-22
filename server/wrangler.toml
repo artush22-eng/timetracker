@@ -8,8 +8,9 @@ compatibility_date = "2024-09-01"
 [vars]
 MAIL_FROM_EMAIL = "timelytracker@outlook.com"
 MAIL_FROM_NAME = "TimeTracker"
-# These accounts are always admins (roles are synced on every request). Everyone else is a member.
-ADMIN_EMAILS = "eddie.wdr@gmail.com,artush22@icloud.com,elliot@westrosdigitalretail.se"
+# ADMIN_EMAILS (comma-separated) is a secret so the public repo doesn't list addresses:
+#   npx wrangler secret put ADMIN_EMAILS
+# Those accounts are always admins (synced on every request); everyone else is a member.
 
 # The database already created in the dashboard (D1 > timetracker).
 [[d1_databases]]

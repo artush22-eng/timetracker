@@ -65,6 +65,7 @@ const roleFor = (env, email) => adminEmails(env).includes(email.toLowerCase()) ?
 
 /// Keeps the stored role in line with ADMIN_EMAILS so editing the list is enough.
 async function syncRole(env, row) {
+  if (!adminEmails(env).length) return row;   // not configured → keep stored roles
   const role = roleFor(env, row.email);
   if (row.role !== role) {
     await env.DB.prepare("UPDATE users SET role = ? WHERE id = ?").bind(role, row.id).run();

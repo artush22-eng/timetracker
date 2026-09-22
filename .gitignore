@@ -8,3 +8,4 @@ app/build/
 web/TimeTracker.zip
 screenshots/
 *.log
+server/seed-admins.sql
