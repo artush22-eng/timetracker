@@ -5,6 +5,7 @@
   "description": "TimeTracker desktop client — clock in, screenshots, activity and app usage.",
   "main": "main.js",
   "author": "Creative Loop",
+  "repository": { "type": "git", "url": "https://github.com/artush22-eng/timetracker.git" },
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
@@ -31,6 +32,6 @@
     "deb": { "artifactName": "TimeTracker.${ext}" },
     "mac": { "target": ["dmg"], "icon": "build/icon.png", "category": "public.app-category.productivity" },
     "dmg": { "artifactName": "TimeTracker.${ext}" },
-    "publish": { "provider": "github" }
+    "publish": { "provider": "github", "owner": "artush22-eng", "repo": "timetracker" }
   }
 }
